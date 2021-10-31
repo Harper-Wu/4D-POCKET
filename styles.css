@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Titillium Web', sans-serif;
+  background-color: #3aafa9;
+  color: #feffff;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #17252a;
+}
+
+code {
+  color: salmon;
+}
+
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #feffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* letter-spacing: 2px; */
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #3AAFA9;
+}
+
+/* Second Navigation Bar */
+#secNav {
+  background-color: #17252a; /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  left: -100px; /* Hide the navbar 50 px outside of the top view */
+  width: 100px; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+/* Style the navbar links */
+#secNav a {
+  float: left;
+  /* display: block; */
+  color: #feffff;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  width: 100%
+}
+
+#secNav a:hover {
+  color: #3AAFA9;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex; /* It enables a flex context for all its direct children. */
+  flex-direction: column;
+  align-items: center; /* Center the alignments for all the items of the flexible <div> element */
+  justify-content: center; /* Align the flex items at the center of the container */
+  padding: 30px 0;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  /* max-width: 800px; */
+  margin: 30px auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+
+.timeline ul li {
+  padding: 20px;
+  background-color:#2b7a78;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* .timeline-content h1 {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 10px;
+} */
+
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.timeline-content a {
+  color: #feffff;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* add different view at tablet/laptop */
+@media only screen and (min-width: 768px) {
+  /* The ::before selector inserts something before the content of each selected element(s). */
+  .timeline::before {
+    content: ''; /* extra invisible element to style */
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 50%;
+    /* The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis). */
+    /* translateX(tx) is equivalent to translate(tx, 0) or translate3d(tx, 0, 0). */
+    transform: translateX(-50%);
+    background-color: #2b7a78;
+  }
+
+  .timeline ul li {
+    width: 50%;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: both; /* Do not allow floating elements on the left or the right side*/
+    /* border-radius: 10px 0 10px 10px; */
+    transform: translateX(-30px);
+  }
+  
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: both; 
+    /* border-radius: 0 10px 10px 10px; */
+    transform: translateX(30px);
+  }
+
+  .timeline ul li::after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #2b7a78;
+    border-radius: 50%;
+    top: 0;
+  }
+  
+  .timeline ul li:nth-child(odd)::after {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  
+  .timeline ul li:nth-child(even)::after {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+
+  .timeline ul li:hover:after {
+    background-color: #feffff;
+  }
+
+  .timeline ul li:nth-child(odd) .time {
+    position: absolute;
+    /* transform: translate(50%, -50%); */
+    top: -8px;
+    right: -100px;
+  }
+
+  .timeline ul li:nth-child(even) .time {
+    position: absolute;
+    /* transform: translate(50%, -50%); */
+    top: -8px;
+    left: -100px;
+  }
+}
+.reference {
+  margin: 1em;
+}
+
+.reference ol {
+  margin-left: 1em;
+}
+
+.reference a {
+  color: #feffff;
+}
+
+
+.main-col {
+  margin: auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+.card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background: #2b7a78;
+  color: #feffff;
+  margin-top: 1.5em;
+  padding: 1.5em;
+}
+
+.card:last-child {
+  margin-bottom: 1.5em;
+}
+
+.card hr {
+  margin: 0.5em 0;
+}
+
+.card h2,
+.card h3 {
+  color: #17252a;
+}
+
+.card ul {
+  margin-left: 1.5em;
+}
+
+.card-code,
+.card-result {
+  margin: 0 1em;
+}
+
+
+.card-result h2,
+.card-result h3 {
+  color: #feffff;
+}
+
+.card-result ol,
+.card-result ul {
+  margin-left: 0.5em;
+} */
+
+.card dl dd {
+  padding-inline-start: 40px;
+}
+
+/* Styles for demo.html */
+
+/* Styles for HTML Tables */
+.table-border th, 
+.table-border td {
+  /* Add border */
+  border: 1px solid black;
+}
+/* Set border-collapse at tag level to override User Agent Sheet */
+table {
+  border-collapse: collapse;
+}
+
+#table-full th {
+  background-color: #3aafa9;  /* Set headings' background color*/
+}
+
+#table-full th, 
+#table-full td {
+  border: 1px solid black;  /* Add border */
+  padding: 5px;               /* Add padding */
+  text-align: left;           /* Set text align from left */
+}
+
+/* Styles for CSS Selector */
+#para {
+  text-align: center;
+  color: tomato;
+}
+
+.demo-center {
+  text-align: center;
+  color: tomato;
+}
+
+p.demo-right {
+  text-align: right;
+  color: tomato;
+}
+
+h1.grp-sel, 
+h2.grp-sel, 
+p.grp-sel {
+  text-align: center;
+  color: yellow;
+}
+
+/* Styles for Box Model */
+div.boxmodel {
+  background-color: grey; /* setting box background color */
+  width: 300px;
+  border: 15px solid skyblue;
+  padding: 50px;
+  margin: 20px;
+}
+
+.flex-container {
+  /* Setting display property to flex to make container become flexible */
+  display: flex;
+  /* Setting flex-direction property to define in which direction the container wants to stack the flex items. */
+  flex-direction: row;
+  background-color: DodgerBlue;
+}
+
+.flex-container-col {
+  /* Setting display property to flex to make container become flexible */
+  display: flex;
+  /* Setting flex-direction property to define in which direction the container wants to stack the flex items. */
+  flex-direction: column;
+  background-color: DodgerBlue;
+  margin-top: 1em;
+}
+
+.flex-container > div,
+.flex-container-col > div {
+  background-color: grey;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container-1 {
+  display: flex;
+  /* Setting justify-content to define how to align the flex items */
+  justify-content: flex-end;
+  background-color: DodgerBlue;
+}
+
+.flex-container-4 {
+  display: flex;
+  height: 300px;
+  flex-wrap: wrap;
+  /* The space-between value displays the flex lines with equal space between them: */
+  align-content: space-between;
+  background-color: DodgerBlue;
+}
+
+.flex-container-5 {
+  display: flex;
+  height: 300px;
+  /* The flex-wrap property specifies whether the flex items should wrap or not. */
+  flex-wrap: wrap;
+  /* The space-around value displays the flex lines with space before, between, and after them: */
+  align-content: space-around;
+  background-color: DodgerBlue;
+  margin-top: 1em;
+}
+
+.flex-container-4 > div,
+.flex-container-5 > div {
+  background-color: grey;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+/* Styles for CSS responsive image */
+img {
+  width: 100%;
+  height: auto;
+}
+
+#bgimg-1 {
+  width: 100%;
+  height: 400px;
+  background-image: url('img/house.jpeg');
+  background-repeat: no-repeat;
+  /* Set background-size to contain to rescale img to fit the content area but keep its aspect ratio */
+  background-size: contain;
+  border: 1px solid red;
+}
+
+#bgimg-2 {
+  width: 100%;
+  height: 400px;
+  background-image: url('img/house.jpeg');
+  background-repeat: no-repeat;
+  /* Set background-size to contain to rescale img to fit the content area but keep its aspect ratio */
+  background-size: 100% 100%;
+  border: 1px solid red;
+  margin-top: 1em;
+}
+
+#bgimg-3 {
+  width: 100%;
+  height: 400px;
+  background-image: url('img/house.jpeg');
+  background-repeat: no-repeat;
+  /* Set background-size to 100% 100% to stretch img to cover the content area*/
+  background-size: cover;
+  border: 1px solid red;
+  margin-top: 1em;
+}
+
+.flex-container-2 {
+  display: flex;
+  /* Setting justify-content to define how to align the flex items */
+  justify-content: flex-start;
+  background-color: DodgerBlue;
+  margin-top: 1em;
+}
+
+.flex-container-3 {
+  display: flex;
+  /* Setting justify-content to define how to align the flex items */
+  justify-content: center;
+  background-color: DodgerBlue;
+  margin-top: 1em;
+}
+
+.flex-container-1 > div,
+.flex-container-2 > div,
+.flex-container-3 > div {
+  background-color: grey;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+/* Styles for cv.html */
+.cv-head {
+  display: flex;
+}
+
+.cv-img {
+  width: 100px;
+}
+
+.cv-img,
+.cv-info {
+  margin-left: 2em;
+}
+
+.cv-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cv-info ul {
+  list-style: none;
+  margin: 0;
+}
+
+.cv-info ul li {
+  display: flex;
+}
+
+.bold {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.semi-bold {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.cv-skill ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cv-skill li {
+  list-style: none;
+}

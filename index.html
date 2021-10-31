@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>四次元ポケット - Web History</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <!-- Create top navigation bar -->
+    <nav>
+      <div class="logo">
+        <h4>四次元ポケット - 4D pocket</h4>
+      </div>
+      <!-- Create navation link to other pages -->
+      <ul class="nav-links">
+        <li><a href="#">History</a></li>
+        <li><a href="demo.html">Demo</a></li>
+        <li><a href="cv.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Create a div as container to hold the content in the page -->
+  <div class="container">
+    <h1>The history of web development starts from 1990 ...</h1>
+    <!-- Create a div as container to hold the whole timeline -->
+    <div class="timeline">
+      <!-- Create a timeline using Unordered list -->
+      <!-- Each list item as a timeline elelment, consists of a date and a content -->
+      <ul>
+        <li>
+          <div class="timeline-content">
+            <div class="time">1990</div>
+            <p>
+              <!-- Use strong to make the text bold and indicates this is important -->
+              <!-- Use em to make the text in italic type and stress emphasis -->
+              <strong>The first web browser - <em>WorldWideWeb</em></strong>.<br>
+              WorldWideWeb was released in 1990 by Tim Berners-Lee when he was working at CERN and renamed to Nexus later. <br>
+              The browser was more like a browser-editor with graphical features at that time and it could only be used on NeXT computers. <br>
+              <!-- Add target attribute to open the link in a new tab -->
+              (Photo from <a href="https://www.w3.org" target="_blank">W3C</a> )
+            </p>
+            <!-- Add image, set class as responsive to auto rescale as the parent element change -->
+            <img src="img/tims_editor.jpeg" alt="WorldWideWeb browser" class="responsive">
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-content">
+            <div class="time">1991</div>
+            <p>
+            <strong>HTML (Hypertext Markup Language)</strong><br>
+            The first draft of HTML was published by Tim Berners-Lee by started a WWW-talk mailing list. <br>
+            HTML that invented by Tim was strongly influenced by SGML which stands for Standard Generalized Mark-up Language 
+            is an internatonally agreed upon method for marking up text into structural units.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-content">
+            <div class="time">1992</div>
+            <p>
+              <strong>Lynx</strong><br>
+              Lynx was created by programmers at the University of Kansas and still being maintained in 2020. <br>
+              Lynx is a texted-based browser that can not display images or videos, but it can handle non-text content via launching external programs. 
+              It highlight the chosen link using cursor keys and ask users to interact with keyboard input, 
+              or having all links on a page numbered and entering the chosen link's number. <br>
+              (Photo from <a href="https://lynx.browser.org/" target="_blank">Lynx</a> )
+            </p>
+            <img src="img/lynx.png" alt="Lynx browser" class="responsive">
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-content">
+            <div class="time">1993</div>
+            <p>
+              <strong>Mosaic</strong><br>
+              Mosaic was created by Marc Andreessen and Eric Bina from the University of Illinois. <br>
+              It was able run on multiple platforms including Windows and was available for free. 
+              These features made it the most popular browser worldwide after it launched. <br>
+              (Photo from <a href="https://origin.webdesignmuseum.org/" target="_blank">webdesignmuseum.org</a> )
+            </p>
+            <img src="img/ncsa-mosaic-1-0-preview.png" alt="Mosaic browser" class="responsive"><br>
+            <p>
+              <strong>HTML 1.0</strong><br>
+              First proposal for an HTML specification draft by Berners-Lee and Dan Connolly published in mid-1993 and expired after six months.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-content">
+            <div class="time">1994</div>
+            <p>
+              <strong>Netscape Navigator</strong><br>
+              Netscape Navigator was proprietary web browser sold by Netscape Communications Corp. <br>
+              It was inspired by the success of the Mosaic web browser and became the most popular browser in the world, 
+              until it was surpassed by Microsoft during the Browser Wars.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-content">
+            <div class="time">1995</div>
+            <p>
+              <strong>Internet Explorer 1.0</strong> and the Browser Wars<br>
+              In order to compete with Netscape, Microsoft released Internet Explorer 1.0 and started a Browser War. <br>
+              In its first version, Internet Explorer is mostly licensed code from Spyglass Mosaic, though this is eventually rewritten. 
+              It lacked crucial features, but subsequent versions of Internet Explorer would see marked improvements. <br>
+              <strong>HTML 2.0</strong><br>
+              HTML 2.0 contains all the features of HTML 1.0 along with that few additional features, 
+              which remained as the standard markup language for designing and creating websites until January 1997 and refined various core features of HTML.<br>
+              <strong>JavaScript 1.0</strong><br>
+              Netscape created and released JavaScript with their browser. <br>
+              The language is originally developed by Brendan Eich in the months prior, and soon became a novel, foundational, language of the web. 
+              JavaScript gave websites powful computing capabilities they never have before.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-content">
+            <div class="time">1996</div>
+            <p>
+              <strong>CSS (Cascading Style Sheets)</strong><br>
+              Håkon W. Lie proposed the first iteration of Cascading Style Sheets as a way of styling web pages in 1995. <br>
+              At that time there were serveral other style sheet languages, after discussions on public mailing lists and inside World Wide Web Consortium, 
+              the first W3C CSS Recommendation released.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-content">
+            <div class="time">1997</div>
+            <p>
+              <strong>HTML 3.2</strong><br>
+              After HTML 3.0 is officially abandoned, the W3C drafts and publishes HTML 3.2 as an official recommendation. <br>
+              The new specification includes several features already implemented in browsers such as tables, superscripts, advanced forms, and more. 
+              Much of this version of HTML is still in use today. <br>
+              <strong>ECMAScript</strong><br>
+              ECMA releases an official standard for ECMAScript, based off the work being done with JavaScript. <br>
+              Netscape had developed JavaScript in the years before, but wished to standardize to avoid being the sole maintainer. 
+              ECMAScript draws heavily from version of JavaScript implemented in the Netscape browser, with some improvements.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-content">
+            <div class="time">1998</div>
+            <p>
+              <strong>CSS2</strong><br>
+              CSS level 2 specification was developed by the W3C and became a recommendation in 1998. <br>
+              It includes a number of new capabilites and features such as positioning, media types, bidirectional text and new font properites.
+              <strong>ECMAScript 2</strong><br>
+              ECMAScript 2 released. <br>
+              <strong>XML Version 1.0</strong><br>
+              The W3C publishes a specification for XML in 1998. <br>
+              XML stands for Extensible Markup Language, it is an application profile of SGML and a way to structure data readable by both machines and computers. 
+              XML is used heavily in web services, and allows for web servers and clients to exchange information back and forth programatically.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-content">
+            <div class="time">1999</div>
+            <p>
+              <strong>HTML 4.01</strong><br>
+              HTML 4.01 was release and became a W3C recommendation.
+              In this version, they slightly tweaked objects, forms, and images, fixed some bugs, 
+              and created a generally more stable version, which would be used by web developers for more than 10 years. <br>
+              <strong>CSS3</strong><br>
+              CSS3 released in 1999 and has huge different with CSS 2. <br>
+              CSS 3 is divided into several separate documents called "modules" instead of 
+              having one large single specification defining various features. 
+              Due to the modularization, different modules have different stability and statuses. <br>
+              <strong>ECMAScript 3</strong><br>
+              ECMAScript 3 released. <br>
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-content">
+            <div class="time">2000</div>
+            <p>
+              <strong>XHTML 1.0</strong><br>
+              XHTML 1.0 became a W3C recommendation in 2000, it is the XML equivalent to strict HTML 4.01. <br>
+              XHTML strictly enforces its ruleset, which makes it interoperable, but more difficult to implement in browsers.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-content">
+            <div class="time">2002</div>
+            <p>
+              <strong>AWS (Amazon Web Services)</strong><br>
+              First Amazon Web Services on Amazon.com platform was opend to all developers in 2002. <br>
+              It is a pay-as-you-go basis on-dmand cloud computing platforms and APIs to individuals, companies and governments.
+            </p>
+          </div>
+        </li>
+<!-- 
+        <li>
+          <div class="timeline-content">
+            <div class="time">2002</div>
+            <p>
+              <strong>Mozilla Phoenix</strong><br>
+              
+              After years as an experimental branch of Netscape Navigator, Phoenix is unveiled to the Mozilla open source community. 
+              Phoenix was a complete rewrite of the existing browser, and was faster, lighter and included the latest web standards.
+            </p>
+          </div>
+        </li> -->
+
+        <li>
+          <div class="timeline-content">
+            <div class="time">2003</div>
+            <p>
+              <strong>Safari</strong><br>
+              Apple releases its second ever browser attempt - safari in 2003 on Mac OS X platform.  <br>
+              Safari allows Macs to ship with a native browser, and end their relationship with Microsoft’s Internet Explorer. 
+              It uses a little known open source browser engine known as KHTML, which will eventually transform into Webkit. <br> 
+              <strong>CSS Zen Garden</strong><br>
+              Dave Shea launches CSS Zen Garden in 2003. <br>
+              The garden is a collection of user contributed webpages, all with the same HTML, but each with a different CSS stylesheet. 
+              The examples on Shea’s site help push the web standards movement forward, and convinces many of the strength of CSS. <br>
+              <strong>WordPress</strong><br>
+              WordPress is created by Matt Mullenweg and Mike Littlein 2003. <br>
+              WordPress is a free and open-source content management system (CMS). 
+              Features include a plugin architecture and a template system, referred to within WordPress as Themes.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-content">
+            <div class="time">2004</div>
+            <p>
+              <strong>Mozilla Firefox</strong><br>
+              Firefox was releas in 2004, after Mozilla working on its development for almost four years. <br>
+              Mozilla is an open source project, Firefox is a free and open-source web browser.
+              Firefox implements current and anticipated web standards by using Gecko layout engine.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-content">
+            <div class="time">2005</div>
+            <p>
+              <strong>AJAX</strong><br>
+              AJAX stands for Asynchronous Javascript and XML, was first publicly used in 2005 by Jesse James Garrett. <br>
+              It is not a new technology, but Garrett officially codified the methodology.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-content">
+            <div class="time">2006</div>
+            <p>
+              <strong>jQuery</strong><br>
+              jQuery is created by John Resig at BarCamp in 2006. <br>
+              It was influenced by Dean Edwards earlier cssQuery library and currently maintained by a team of developers led by Timmy Willison 
+              It is a  JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-content">
+            <div class="time">2008</div>
+            <p>
+              <strong>Google Chrome</strong><br>
+              Google Chrome is first released on 2008 for Windows XP and later.<br>
+              Google Chrome was using WebKit as their rendering engine, but eventrually forked it to Blink engine.
+              A few months after it released it gained over 1% usage share and overtake the market by the beginning of the next decade.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-content">
+            <div class="time">2010</div>
+            <p>
+              <strong>Responsive Web Design</strong><br>
+              Ethan Marcotte coined the term "Responsive Web Design" in an article named <em>A list Apart</em>.
+              It is an approach to make web pages render well on variety of devices and screen sizes to ensure usability and satisfaction..
+              <strong>AngularJS</strong><br>
+              AngularJS is a open-source front-end web framework developed by Google 
+              and community of individuals and corporations released in 2010 <br>
+              AngularJS helps web designers create single page applications using data binding directly in HTML templates. 
+              It also provides helpers for connecting with a server, manipulating data and managing business logic.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-content">
+            <div class="time">2013</div>
+            <p>
+              <strong>React</strong><br>
+              React was created by developers from Facebook. <br>
+              It is a framework for building web user interfaces.
+              It was inspired by the PHP framework XHP, React embraces the idea of components, 
+              and allows users to create individual components which respond and automatically update based on data and content changes.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-content">
+            <div class="time">2014</div>
+            <p>
+              <strong>HTML 5</strong><br>
+              HTML5 is formally made a recommendation by the W3C in 2014. <br>
+              HTML5 adds new syntactic elements and attributes, deeper APIs, and more access to native features. 
+              It also includes much broader support for multimedia and web graphics with elements like video and canvas. <br>
+              <strong>Vue.js</strong><br>
+              Vue.js was launched by Evan You in 2014. <br>
+              It is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications
+              Vue is break up the framwork features into modules, so that developers could use whatever piece of the framework they want. <br>
+            </p>
+          </div>
+        </li>
+        
+        <li>
+          <div class="timeline-content">
+            <div class="time">2015</div>
+            <p>
+              <strong>Microsoft Edge</strong><br>
+              Microsoft Edge is first releas on 2015 for Windows 10 and Xbox One. <br>
+              It was initially built with Microsoft's own proprietary browser engine EdgeHTML 
+              and their Chakra JavaScript engine, a version now referred to as Microsoft Edge Legacy.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Create a section to group content thematically -->
+  <section>
+    <div class="reference">
+      <h3>Reference: </h3>
+      <!-- Use ordered list to create a reference list -->
+      <ol>
+        <!-- Each list item contains a &lt;a&gt; tag defines a hyperlink to the reference website -->
+        <li><a href="https://thehistoryoftheweb.com/timeline/">The History of the Web by Jay Hoffmann</a></li>
+        <li><a href="https://www.w3.org/People/Berners-Lee/WorldWideWeb.html">The WorldWideWeb browser</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Lynx_(web_browser)">Lynx (web browser)</a></li>
+        <li><a href="https://www.w3.org/People/Raggett/book4/ch02.html">A History of HTML by Addison Wesley Longman</a></li>
+        <li><a href="https://www.webdesignmuseum.org/old-software/web-browsers/ncsa-mosaic-1-0">NCSA Mosaic 1.0</a> </li>
+        <li><a href="https://en.wikipedia.org/wiki/HTML">HTML - wikipedia</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript - wikipedia</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/CSS">CSS - wikipedia</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Microsoft_Edge">Microsoft Edge - wikipedia</a></li>
+        <li><a href="https://www.youtube.com/watch?v=XYTwYmOjqQs&t=250s">Evolution of Web Design 1990-2019</a></li>
+      </ol>
+    </div>
+    
+  </section>
+</body>
+</html>

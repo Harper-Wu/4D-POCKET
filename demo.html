@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>四次元ポケット - Demo</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Use hightlight.js and atom style sheet to show code as code on webpage -->
+  <link rel="stylesheet" href="atom-one-dark-reasonable.css">
+  <script src="highlight.pack.js"></script>
+  <!-- call hljs's function to initial highlight.js -->
+  <script>hljs.highlightAll();</script>
+  <!-- script.js were linked in the AJAX part -->
+  <!-- <script src="script.js"></script> -->
+</head>
+<body>
+  <header>
+    <!-- Create top navigation bar -->
+    <nav>
+      <div class="logo">
+        <h4>四次元ポケット - 4D pocket</h4>
+      </div>
+      <!-- Create navation link to other pages -->
+      <ul class="nav-links">
+        <li><a href="index.html">History</a></li>
+        <li><a href="#">Demo</a></li>
+        <li><a href="cv.html">About</a></li>
+      </ul>
+    </nav>
+    <!-- Create a second navigation bar when user scoll down this page for jumping to different section conveniencetly -->
+    <div id="secNav">
+      <a href="#secHTML">HTML</a>
+      <a href="#secCSS">CSS</a>
+      <a href="#secJavaScript">JavaScript</a>
+      <a href="#secAJAX">AJAX</a>
+    </div>
+  </header>
+
+  <!-- Create a div as container to hold the content in the page -->
+  <div class="main-col">
+    <!-- Create a section group HTML cards together -->
+    <section id="secHTML">
+      <h1>HTML</h1>
+      <p>
+        HTML stands for Hyper Text Markup Language. It is a standard markup language for creating Web pages. 
+        HTML consists of a series of elements tell the browser how to display a Web page. 
+      </p>
+      <!-- Create a div as a container to hold each demo -->
+      <div class="card">
+        <h2>Document Structure</h2>
+        <p>
+          All HTML documents must start with a document type declaration: <code>&lt;!DOCTYPE html&gt;</code>. <br>
+          The HTML document itself begins with <code>&lt;html&gt;</code> and ends with <code>&lt;/html&gt;</code>. <br>
+          The visible part of the HTML document is between <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code>. <br>
+        </p>
+        
+        <h3>Code:</h3>
+        <!-- Create a div to hold code explicitily -->
+        <div class="card-code">
+          <!-- Use pre tag to present the text exactly as written -->
+          <!-- Use code tag to suggest this part is code -->
+          <pre><code class="html">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              &lt;body&gt;
+              &lt;h1&gt;First Heading&lt;/h1&gt;
+              &lt;p&gt;first paragraph.&lt;/p&gt;
+              &lt;/body&gt;
+            &lt;/html&gt;
+          </code></pre>
+        </div>
+        <h3>Result:</h3>
+        <!-- Create a div to hold the demo code -->
+        <div class="card-result">
+            <h1>First Heading</h1>
+            <p>first paragraph.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Headings</h2>
+        <p>
+          HTML headings are titles or subtitles that you want to display on a webpage. <br>
+          HTML headings are defined with the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags. <br>
+          <code>&lt;h1&gt;</code> defines the most important heading. <code>&lt;h6&gt;</code> defines the least important heading.
+        </p>
+        <h3>Code:</h3>
+        <div class="card-code">
+          <pre><code class="html">
+            &lt;h1&gt;H1 Heading&lt;/h1&gt;
+            &lt;h2&gt;H2 Heading&lt;/h2&gt;
+            &lt;h3&gt;H3 Heading&lt;/h3&gt;
+            &lt;h4&gt;H4 Heading&lt;/h4&gt;
+            &lt;h5&gt;H5 Heading&lt;/h5&gt;
+            &lt;h6&gt;H6 Heading&lt;/h6&gt;
+          </code></pre>
+        </div>
+        <h3>Result:</h3>
+        <div class="card-result">
+          <h1>H1 Heading</h1>
+          <h2>H2 Heading</h2>
+          <h3>H3 Heading</h3>
+          <h4>H4 Heading</h4>
+          <h5>H5 Heading</h5>
+          <h6>H6 Heading</h6>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Lists</h2>
+        <p>
+          There 3 types of Lists in HTML: Ordered Lists, Unordered Lists and Discription Lists. 
+        </p>
+        <hr>
+        <p>
+          Each Ordered List starts with <code>&lt;ol&gt;</code> tag, each list item starts with <code>&lt;li&gt;</code> tag. <br>
+          The Ordered List items are marked with numbers by default </p>
+        <h3>Code:</h3>
+        <div class="card-code">
+          <!-- Ordered Lists -->
+          <pre><code>
+            &lt;!-- Ordered Lists --&gt;
+            &lt;ol&gt;
+              &lt;li&gt;HTML&lt;/li&gt;
+              &lt;li&gt;CSS&lt;/li&gt;
+              &lt;li&gt;JavaScript&lt;/li&gt;
+            &lt;/ol&gt;
+          </code></pre>
+        </div>
+        <h3>Result:</h3>
+        <div class="card-result">
+          <!-- Ordered Lists -->
+          <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ol>
+        </div>
+        <hr>
+        <p>
+          Each Unordered List starts with <code>&lt;ul&gt;</code> tag, and each list item starts with <code>&lt;li&gt;</code> tag. <br>
+          The Unordered list items marked with bullets by default. 
+        </p>
+        <h3>Code:</h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;!-- Unordered Lists --&gt;
+            &lt;ul&gt;
+              &lt;li&gt;HTML&lt;/li&gt;
+              &lt;li&gt;CSS&lt;/li&gt;
+              &lt;li&gt;JavaScript&lt;/li&gt;
+            &lt;/ul&gt;
+          </code></pre>
+        </div>
+        <h3>Result:</h3>
+        <div class="card-result">
+          <!-- Unordered Lists -->
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <hr>
+        <p>
+          A description list is a list of terms, with a description of each term. 
+          The <code>&lt;dl&gt;</code> tag defines the description list, the <code>&lt;dt&gt;</code> tag defines the term (name), and the <code>&lt;dd&gt;</code> tag describes each term:
+        </p>
+        <h3>Code:</h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;!-- Description Lists --&gt;
+            &lt;dl&gt;
+              &lt;dt&gt;HTML&lt;/dt&gt;
+              &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+              &lt;dt&gt;CSS&lt;/dt&gt;
+              &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+              &lt;dt&gt;JavaScript&lt;/dt&gt;
+              &lt;dd&gt;A scripting or programming language&lt;/dd&gt;
+            &lt;/dl&gt;
+          </code></pre>
+        </div>
+        <h3>Result:</h3>
+        <div class="card-result">
+          <!-- Description Lists -->
+          <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+            <dt>JavaScript</dt>
+            <dd>A scripting or programming language</dd>
+          </dl>
+        </div>
+      </div>
+
+      
+      <div class="card">
+        <h2>Tables</h2>
+        <p>
+          HTML tables are used to arrange data into rows and columns. <br>
+          The &lt;table&gt; tag defines an HTML table. &lt;br&gt; <br>
+          Each table row is defined with a &lt;tr&gt; tag. Each table header is defined with a &lt;th&gt; tag. Each table data/cell is defined with a &lt;td&gt; tag. <br>
+          By default, the text in &lt;th&gt; elements are bold and centered. <br>
+          By default, the text in &lt;td&gt; elements are regular and left-aligned. <br>
+        </p>
+        <h3>Code:</h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;table&gt;
+              &lt;tr&gt;
+                &lt;th&gt;Firstname&lt;/th&gt;
+                &lt;th&gt;Lastname&lt;/th&gt;
+                &lt;th&gt;Age&lt;/th&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Jill&lt;/td&gt;
+                &lt;td&gt;Smith&lt;/td&gt;
+                &lt;td&gt;50&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Eve&lt;/td&gt;
+                &lt;td&gt;Jackson&lt;/td&gt;
+                &lt;td&gt;94&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+          </code></pre>
+        </div>
+        <h3>Result:</h3>
+        <div class="card-result">
+          <table class='table-origin'>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Age</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+            </tr>
+          </table>
+        </div>
+        <hr>
+        <p>
+          The HTML Tables are without borders. To add a border to a table, use the CSS <code>&lt;border&gt;</code> property 
+          and add border-collapse property to collapse borders into one border.
+        </p>
+        <h3>Code:</h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;style&gt;
+              .table-border th, 
+              .table-border td {
+                /* Add border */
+                border: 1px solid black;
+              }
+              table {
+                /* Set border-collapse at tag level to override User Agent Sheet */
+                border-collapse: collapse;
+              }
+            &lt;/style&gt;
+            &lt;table class=&quot;table-border&quot;&gt;
+              &lt;tr&gt;
+                &lt;th&gt;Firstname&lt;/th&gt;
+                &lt;th&gt;Lastname&lt;/th&gt; 
+                &lt;th&gt;Age&lt;/th&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Jill&lt;/td&gt;
+                &lt;td&gt;Smith&lt;/td&gt;
+                &lt;td&gt;50&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Eve&lt;/td&gt;
+                &lt;td&gt;Jackson&lt;/td&gt;
+                &lt;td&gt;94&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;John&lt;/td&gt;
+                &lt;td&gt;Doe&lt;/td&gt;
+                &lt;td&gt;80&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+          </code></pre>
+        </div>
+        <h3>Result:</h3>
+        <div class="card-result">
+          <table class="table-border">
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th> 
+              <th>Age</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+            </tr>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>80</td>
+            </tr>
+          </table>
+        </div>
+        <hr>
+        <p>
+          For aesthetics purpose, we can add width, padding, text-align properties. 
+          For functional purpose, we can also add a caption or make a cell span more than one row or column.
+        </p>
+        <h3>Code:</h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;style&gt;
+              #table-full th {
+                background-color: #3aafa9;  /* Set headings' background color*/
+              }
+
+              #table-full th, 
+              #table-full td {
+                border: 1px solid black;  /* Add border */
+                padding: 5px;               /* Add padding */
+                text-align: left;           /* Set text align from left */
+              }
+
+              /* Set border-collapse at tag level to override User Agent Sheet */
+              table {
+                border-collapse: collapse;
+              }
+            &lt;/style&gt;
+            &lt;!-- Use style set table width as 100% parent container's width --&gt;
+            &lt;table id=&quot;table-full&quot; style=&quot;width: 100%;&quot;&gt;
+              &lt;!-- Add caption --&gt;
+              &lt;caption&gt;User Contact&lt;/caption&gt;
+              &lt;tr&gt;
+                &lt;th&gt;Name&lt;/th&gt;
+                &lt;!-- Make cell span 2 columns --&gt;
+                &lt;th colspan=&quot;2&quot;&gt;Contact&lt;/th&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Jill Smith&lt;/td&gt;
+                &lt;td&gt;0412345678&lt;/td&gt;
+                &lt;td&gt;JillSmith@mail.com&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Eva Jackson&lt;/td&gt;
+                &lt;td&gt;0412345678&lt;/td&gt;
+                &lt;td&gt;evajackson@mail.com&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;John Doe&lt;/td&gt;
+                &lt;td&gt;0412345678&lt;/td&gt;
+                &lt;td&gt;johndoe@mail.com&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+          </code></pre>
+        </div>
+        <h3>Result:</h3>
+        <div class="card-result">
+          <!-- Use style set table width as 100% parent container's width -->
+          <table id="table-full" style="width: 100%;">
+            <!-- Add caption -->
+            <caption>User Contact</caption>
+            <tr>
+              <th>Name</th>
+              <!-- Make cell span 2 columns -->
+              <th colspan="2">Contact</th>
+            </tr>
+            <tr>
+              <td>Jill Smith</td>
+              <td>0412345678</td>
+              <td>JillSmith@mail.com</td>
+            </tr>
+            <tr>
+              <td>Eva Jackson</td>
+              <td>0412345678</td>
+              <td>evajackson@mail.com</td>
+            </tr>
+            <tr>
+              <td>John Doe</td>
+              <td>0412345678</td>
+              <td>johndoe@mail.com</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Forms</h2>
+        <p>
+          An HTML form is used to collect user input. The user input is most often sent to a server for processing. <br>
+          An HTML form is created with a <code>&lt;form&gt;</code> element. <br>
+          The form's <code>&lt;action&gt;</code> attributes specifys the form-handler which is typically a file on the server with a script for processing input data.
+          The most used and important form elements are <code>&lt;input&gt;</code> and <code>&lt;label&gt;</code>. <br>
+          The <code>&lt;input&gt;</code> element has different attributes to show <code>&lt;input&gt;</code> element in different ways. 
+          Such as Text Field or Checkbox.<br>
+          <code>&lt;input&gt;</code>'s <code>&lt;name&gt;</code> attributes must NOT be omitted, or the value of input field will not be sent. <br>
+          <code>&lt;label&gt;</code> is useful for screen-reader - the screen-reader will read out loud the label when the user focus on the input element. <br>
+          <code>&lt;label&gt;</code> is helpful when users trying to click on very small regions - 
+          when the user clicks the text within the <code>&lt;label&gt;</code> element, it toggles the radio button/checkbox. <br>
+          The <code>&lt;for&gt;</code> attribute of the <code>&lt;label&gt;</code> should be equal to 
+          the <code>&lt;id&gt;</code> attribute of the <code>&lt;input&gt;</code> element to bind them together. <br>
+          <code>&lt;input&gt;</code> types:
+        </p>
+        <ul>
+          <li>text</li>
+          <li>radio</li>
+          <li>checkbox</li>
+          <li>submit</li>
+        </ul>
+        <h3>Code:</h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;!-- Use action attribute to specify the form-handler --&gt;
+            &lt;!-- &lt;form action=&quot;action_page.php&quot;&gt; --&gt;
+            &lt;form&gt;
+              &lt;!-- Set for attribute of label element equals to the id attribute of input element to bind them together --&gt;
+              &lt;p&gt;&lt;strong&gt;What's your name?&lt;/strong&gt;&lt;/p&gt;
+              &lt;label for=&quot;fname&quot;&gt;First Name: &lt;/label&gt;&lt;br&gt;
+              &lt;!-- Set input type as text, define a single-line input field for text input --&gt;
+              &lt;input type=&quot;text&quot; name=&quot;fname&quot; id=&quot;fname&quot;&gt;&lt;br&gt;
+              &lt;label for=&quot;lname&quot;&gt;Last Name: &lt;/label&gt;&lt;br&gt;
+              &lt;input type=&quot;text&quot; name=&quot;lname&quot; id=&quot;lname&quot;&gt;&lt;br&gt;
+
+              &lt;p&gt;&lt;strong&gt;Are you a ...?&lt;/strong&gt;&lt;/p&gt;
+              &lt;input type=&quot;radio&quot; name=&quot;profession&quot; id=&quot;student&quot; value=&quot;student&quot;&gt;
+              &lt;label for=&quot;student&quot;&gt;Student&lt;/label&gt;&lt;br&gt;
+              &lt;input type=&quot;radio&quot; name=&quot;profession&quot; id=&quot;teacher&quot; value=&quot;teacher&quot;&gt;
+              &lt;label for=&quot;teacher&quot;&gt;Teacher&lt;/label&gt;&lt;br&gt;
+              &lt;input type=&quot;radio&quot; name=&quot;profession&quot; id=&quot;NA&quot; value=&quot;NA&quot;&gt;
+              &lt;label for=&quot;NA&quot;&gt;Prefer not to say&lt;/label&gt;&lt;br&gt;
+
+              &lt;p&gt;&lt;strong&gt;Are you interested in ...?&lt;/strong&gt;&lt;/p&gt;
+              &lt;input type=&quot;checkbox&quot; name=&quot;html&quot; id=&quot;html&quot; value=&quot;html&quot;&gt;
+              &lt;label for=&quot;html&quot;&gt;HTML&lt;/label&gt;&lt;br&gt;
+              &lt;input type=&quot;checkbox&quot; name=&quot;css&quot; id=&quot;css&quot; value=&quot;css&quot;&gt;
+              &lt;label for=&quot;css&quot;&gt;CSS&lt;/label&gt;&lt;br&gt;
+              &lt;input type=&quot;checkbox&quot; name=&quot;js&quot; id=&quot;js&quot; value=&quot;js&quot;&gt;
+              &lt;label for=&quot;js&quot;&gt;JavaScript&lt;/label&gt;&lt;br&gt;
+
+              &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+            &lt;/form&gt;
+          </code></pre>
+        </div>
+        <h3>Result:</h3>
+        <div class="card-result">
+          <!-- Use action attribute to specify the form-handler -->
+          <!-- <form action="action_page.php"> -->
+          <form>
+            <!-- Set for attribute of label element equals to the id attribute of input element to bind them together -->
+            <p><strong>What's your name?</strong></p>
+            <label for="fname">First Name: </label><br>
+            <!-- Set input type as text, define a single-line input field for text input -->
+            <input type="text" name="fname" id="fname"><br>
+            <label for="lname">Last Name: </label><br>
+            <input type="text" name="lname" id="lname"><br>
+
+            <p><strong>Are you a ...?</strong></p>
+            <input type="radio" name="profession" id="student" value="student">
+            <label for="student">Student</label><br>
+            <input type="radio" name="profession" id="teacher" value="teacher">
+            <label for="teacher">Teacher</label><br>
+            <input type="radio" name="profession" id="NA" value="NA">
+            <label for="NA">Prefer not to say</label><br>
+
+            <p><strong>Are you interested in ...?</strong></p>
+            <input type="checkbox" name="html" id="html" value="html">
+            <label for="html">HTML</label><br>
+            <input type="checkbox" name="css" id="css" value="css">
+            <label for="css">CSS</label><br>
+            <input type="checkbox" name="js" id="js" value="js">
+            <label for="js">JavaScript</label><br>
+
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="secCSS">
+      <h1>CSS</h1>
+      <p>
+        CSS is the language we use to style an HTML document.
+        CSS describes how HTML elements should be displayed.
+      </p>
+      <div class="card">
+        <h2>Selector</h2>
+        <p>CSS selectors are used to "find" (or select) the HTML elements you want to style. </p>
+        <p>There are 6 most used selectors: </p>
+        <ul>
+          <li>element selector</li>
+          <li>#id selector</li>
+          <li>.class selector</li>
+          <li>element.class selector</li>
+          <li>* universal selector</li>
+        </ul>
+        <h3>Code: </h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;style&gt;
+            /* # id selector */
+              #para {
+                text-align: center;
+                color: tomato;
+              }
+            &lt;/style&gt;
+            &lt;p id=&quot;para&quot;&gt;Affected paragrah. &lt;/p&gt;
+            &lt;p&gt;Not affected paragrah. &lt;/p&gt;
+          </code></pre>
+        </div>
+        <h3>Result: </h3>
+        <div class="card-result">
+          <p id="para">Affected paragrah. </p>
+          <p>Not affected paragrah. </p>
+        </div>
+        <hr>
+        <h3>Code: </h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;style&gt;
+            /* .class selector */
+              .demo-center {
+                text-align: center;
+                color: tomato;
+              }
+            &lt;/style&gt;
+            &lt;h1 class=&quot;demo-center&quot;&gt;Selected h1 heading&lt;/h1&gt;
+            &lt;p class=&quot;demo-center&quot;&gt;Selected paragrah&lt;/p&gt;
+          </code></pre>
+        </div>
+        <h3>Result: </h3>
+        <div class="card-result">
+          <h1 class="demo-center">Selected h1 heading</h1>
+          <p class="demo-center">Selected paragrah</p>
+        </div>
+        <hr>
+        <h3>Code: </h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;style&gt;
+              /* element.class selector */
+              p.demo-right {
+                text-align: right;
+                color: tomato;
+              }
+            &lt;/style&gt;
+            &lt;h1 class=&quot;demo-right&quot;&gt;Not affected h1 heading&lt;/h1&gt;
+            &lt;p class=&quot;demo-right&quot;&gt;Selected paragrah&lt;/p&gt;
+          </code></pre>
+        </div>
+        <h3>Result: </h3>
+        <div class="card-result">
+          <h1 class="demo-right">Not affected h1 heading</h1>
+          <p class="demo-right">Selected paragrah</p>
+        </div>
+        <hr>
+        <h3>Code: </h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;style&gt;
+              /* Grouping selecting */
+              h1.grp-sel, 
+              h2.grp-sel, 
+              p.grp-sel {
+                text-align: center;
+                color: yellow;
+              }
+            &lt;/style&gt;
+            &lt;h1 class=&quot;grp-sel&quot;&gt;Hello World!&lt;/h1&gt;
+            &lt;h2 class=&quot;grp-sel&quot;&gt;Smaller heading!&lt;/h2&gt;
+            &lt;p class=&quot;grp-sel&quot;&gt;This is a paragraph.&lt;/p&gt;
+          </code></pre>
+        </div>
+        <h3>Result: </h3>
+        <div class="card-result">
+          <h1 class="grp-sel">Hello World!</h1>
+          <h2 class="grp-sel">Smaller heading!</h2>
+          <p class="grp-sel">This is a paragraph.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Box Model</h2>
+        <p>
+          All HTML elements can be considered as boxes. <br>
+          The CSS box model is essentially a box that wraps around every HTML element. <br>
+          It consists of: margins, borders, padding, and the actual content. 
+        </p>
+        <h3>Code: </h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;style&gt;
+              div.boxmodel {
+                background-color: grey;       /* setting box background color */
+                width: 300px;                 /* setting box width */
+                border: 15px solid skyblue;   /* setting box border 15px in all direction, type as soli and color */
+                padding: 50px;                /* setting box padding 50px in all direction */
+                margin: 20px;                 /* setting box margin 20px in all direction */
+              }
+            &lt;/style&gt;
+            &lt;div class=&quot;boxmodel&quot;&gt;This text is the content of the box. 
+            We have added a 50px padding, 20px margin and a 15px skyblue border.&lt;/div&gt;
+          </code></pre>
+        </div>
+        <h3>Result: </h3>
+        <div class="card-result">
+          <div class="boxmodel">This text is the content of the box. We have added a 50px padding, 20px margin and a 15px skyblue border.</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Flexbox</h2>
+        <p>
+          The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.
+        </p>
+        <hr>
+        <p>Usually FlexBox model consists of container and items.</p>
+        <h3>Code: </h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;style&gt;
+              .flex-container {
+                /* Setting display property to flex to make container become flexible */
+                display: flex;
+                /* Setting flex-direction property to define in which direction the container wants to stack the flex items. */
+                flex-direction: row;
+                background-color: DodgerBlue;
+              }
+
+              .flex-container-col {
+                /* Setting display property to flex to make container become flexible */
+                display: flex;
+                /* Setting flex-direction property to define in which direction the container wants to stack the flex items. */
+                flex-direction: column;
+                background-color: DodgerBlue;
+                margin-top: 1em;
+              }
+
+
+              /* Setting tag style in specify class */
+              .flex-container &gt; div,
+              .flex-container-col &gt; div {
+                background-color: grey; /* setting box background color */
+                width: 100px;           /* setting box width */
+                margin: 10px;           /* setting box margin */
+                text-align: center;     /* setting box text align in center */
+                line-height: 75px;      /* setting box text line hight */
+                font-size: 30px;        /* setting box text font size */
+              }
+            &lt;/style&gt;
+            &lt;div class=&quot;flex-container&quot;&gt;
+              &lt;div&gt;1&lt;/div&gt;
+              &lt;div&gt;2&lt;/div&gt;
+              &lt;div&gt;3&lt;/div&gt;  
+            &lt;/div&gt;
+            &lt;div class=&quot;flex-container-col&quot;&gt;
+              &lt;div&gt;1&lt;/div&gt;
+              &lt;div&gt;2&lt;/div&gt;
+              &lt;div&gt;3&lt;/div&gt;  
+            &lt;/div&gt;
+          </code></pre>
+        </div>
+        <h3>Result: </h3>
+        <div class="card-result">
+          <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+          </div>
+          <div class="flex-container-col">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+          </div>
+        </div>
+        <hr>
+        <p>Use justify-content property to align the flex items</p> 
+        <h3>Code: </h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;style&gt;
+              .flex-container-1 {
+                display: flex;
+                /* Setting justify-content to define how to align the flex items */
+                justify-content: flex-end;
+                background-color: DodgerBlue;
+              }
+
+              .flex-container-2 {
+                display: flex;
+                /* Setting justify-content to define how to align the flex items */
+                justify-content: flex-start;
+                background-color: DodgerBlue;
+                margin-top: 1em;
+              }
+
+              .flex-container-3 {
+                display: flex;
+                /* Setting justify-content to define how to align the flex items */
+                justify-content: center;
+                background-color: DodgerBlue;
+                margin-top: 1em;
+              }
+              
+              .flex-container-1 &gt; div,
+              .flex-container-2 &gt; div,
+              .flex-container-3 &gt; div {
+                background-color: grey;
+                width: 100px;
+                margin: 10px;
+                text-align: center;
+                line-height: 75px;
+                font-size: 30px;
+              }
+              &lt;/style&gt;
+            &lt;div class=&quot;flex-container-1&quot;&gt;
+              &lt;div&gt;1&lt;/div&gt;
+              &lt;div&gt;2&lt;/div&gt;
+              &lt;div&gt;3&lt;/div&gt;  
+            &lt;/div&gt;
+            &lt;div class=&quot;flex-container-2&quot;&gt;
+              &lt;div&gt;1&lt;/div&gt;
+              &lt;div&gt;2&lt;/div&gt;
+              &lt;div&gt;3&lt;/div&gt;  
+            &lt;/div&gt;
+            &lt;div class=&quot;flex-container-3&quot;&gt;
+              &lt;div&gt;1&lt;/div&gt;
+              &lt;div&gt;2&lt;/div&gt;
+              &lt;div&gt;3&lt;/div&gt;  
+            &lt;/div&gt;
+          </code></pre>
+        </div>
+        <h3>Result: </h3>
+        <div class="card-result">
+          <div class="flex-container-1">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+          </div>
+          <div class="flex-container-2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+          </div>
+          <div class="flex-container-3">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+          </div>
+        </div>
+        <hr>
+        <p>Use align-content property to align the flex lines</p>
+        <h3>Code: </h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;style&gt;
+              .flex-container-4 {
+                display: flex;
+                height: 300px;
+                flex-wrap: wrap;
+                /* The space-between value displays the flex lines with equal space between them: */
+                align-content: space-between;
+                background-color: DodgerBlue;
+              }
+
+              .flex-container-5 {
+                display: flex;
+                height: 300px;
+                /* The flex-wrap property specifies whether the flex items should wrap or not. */
+                flex-wrap: wrap;
+                /* The space-around value displays the flex lines with space before, between, and after them: */
+                align-content: space-around;
+                background-color: DodgerBlue;
+                margin-top: 1em;
+              }
+              
+              .flex-container-4 &gt; div,
+              .flex-container-5 &gt; div {
+                background-color: grey;
+                width: 100px;
+                margin: 10px;
+                text-align: center;
+                line-height: 75px;
+                font-size: 30px;
+              }
+              &lt;/style&gt;
+            &lt;div class=&quot;flex-container-4&quot;&gt;
+              &lt;div&gt;1&lt;/div&gt;
+              &lt;div&gt;2&lt;/div&gt;
+              &lt;div&gt;3&lt;/div&gt;  
+              &lt;div&gt;4&lt;/div&gt;
+              &lt;div&gt;5&lt;/div&gt;
+              &lt;div&gt;6&lt;/div&gt;  
+              &lt;div&gt;7&lt;/div&gt;
+              &lt;div&gt;8&lt;/div&gt;
+              &lt;div&gt;9&lt;/div&gt;  
+              &lt;div&gt;10&lt;/div&gt;
+              &lt;div&gt;11&lt;/div&gt;
+              &lt;div&gt;12&lt;/div&gt;  
+            &lt;/div&gt;
+            &lt;div class=&quot;flex-container-5&quot;&gt;
+              &lt;div&gt;1&lt;/div&gt;
+              &lt;div&gt;2&lt;/div&gt;
+              &lt;div&gt;3&lt;/div&gt;  
+              &lt;div&gt;4&lt;/div&gt;
+              &lt;div&gt;5&lt;/div&gt;
+              &lt;div&gt;6&lt;/div&gt;  
+              &lt;div&gt;7&lt;/div&gt;
+              &lt;div&gt;8&lt;/div&gt;
+              &lt;div&gt;9&lt;/div&gt;  
+              &lt;div&gt;10&lt;/div&gt;
+              &lt;div&gt;11&lt;/div&gt;
+              &lt;div&gt;12&lt;/div&gt;  
+            &lt;/div&gt;
+          </code></pre>
+        </div>
+        <h3>Result: </h3>
+        <div class="card-result">
+          <div class="flex-container-4">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>  
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>  
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>  
+          </div>
+          <div class="flex-container-5">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>  
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>  
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>  
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Responsive Image</h2>
+        <p>To make an image responsive, we can set <code>&lt;width&gt;</code> and <code>&lt;height&gt;</code> property to auto.</p>
+        <h3>Code: </h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;style&gt;
+              img {
+                width: 100%;
+                height: auto;
+              }
+            &lt;/style&gt;
+            &lt;img src=&quot;img/house.jpeg&quot;&gt;
+          </code></pre>
+        </div>
+        <h3>Result: </h3>
+        <div class="card-result">
+            <img src="img/house.jpeg" alt="house">
+        </div>
+        <hr>
+        <p>Use <code>background-size</code> property to make bargroud image respond to resizing and scaling</p>
+        <h3>Code: </h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;style&gt;
+              #bgimg-1 {
+                width: 100%;
+                height: 400px;
+                background-image: url('img/house.jpeg');
+                background-repeat: no-repeat;
+                /* Set background-size to contain to rescale img to fit the content area but keep its aspect ratio */
+                background-size: contain;
+                border: 1px solid red;
+              }
+
+              #bgimg-2 {
+                width: 100%;
+                height: 400px;
+                background-image: url('img/house.jpeg');
+                background-repeat: no-repeat;
+                /* Set background-size to contain to rescale img to fit the content area but keep its aspect ratio */
+                background-size: 100% 100%;
+                border: 1px solid red;
+                margin-top: 1em;
+              }
+
+              #bgimg-3 {
+                width: 100%;
+                height: 400px;
+                background-image: url('img/house.jpeg');
+                background-repeat: no-repeat;
+                /* Set background-size to 100% 100% to stretch img to cover the content area*/
+                background-size: cover;
+                border: 1px solid red;
+                margin-top: 1em;
+              }
+
+              #bgimg {
+                width: 100%;
+                height: 400px;
+                background-image: url('img/house.jpeg');
+                background-repeat: no-repeat;
+                /* Set background-size to cover to rescale img to cover the content area but keep its aspect ratio */
+                background-size: contain;
+                border: 1px solid red;
+              }
+            &lt;/style&gt;
+            &lt;div id=&quot;bgimg-1&quot;&gt;&lt;/div&gt;
+            &lt;div id=&quot;bgimg-2&quot;&gt;&lt;/div&gt;
+            &lt;div id=&quot;bgimg-3&quot;&gt;&lt;/div&gt;
+          </code></pre>
+        </div>
+        <h3>Result: </h3>
+        <div class="card-result">
+          <div id="bgimg-1"></div>
+          <div id="bgimg-2"></div>
+          <div id="bgimg-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="secJavaScript">
+      <h1>JavaScript</h1>
+      <p>
+        JavaScript is a scripting or programming language that enables complex features on web pages, such as animations, interactive maps, etc. <br>
+        It can change and update HTML and CSS, and it can calculate, manipulate and validate data.
+      </p>
+      <div class="card">
+        <h2>Objects</h2>
+        <p>
+          In JavaScript, almost everything is an object. <br>
+          Objects are variables, they can be a single value object or a collection of name : value pairs. <br>
+          Objects are mutable. <br>
+          Properties are the named values of JavaScript objects. <br>
+          Methods are properties contain function definitions, they are actions that can be performed on objects.
+        </p>
+        <h3>Code: </h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;p id=&quot;demo-obj&quot;&gt;&lt;/p&gt;
+            &lt;p id=&quot;demo-obj-prop&quot;&gt;&lt;/p&gt;
+            &lt;p id=&quot;demo-obj-func&quot;&gt;&lt;/p&gt;
+            &lt;p id=&quot;demo-obj-accessor&quot;&gt;&lt;/p&gt;
+            &lt;script&gt;
+              // Create an object using keyword new
+              var x = new Object();
+              // Create a single value object using an object literal
+              var y = 10;
+              // Create a name : value pairs object using an object literal
+              var person = {
+                firstName: &quot;John&quot;,
+                lastName : &quot;Doe&quot;,
+                language : &quot;&quot;,
+                // method
+                fullName: function() {
+                  return this.firstName + &quot; &quot; + this.lastName;
+                },
+                // Accessor getter
+                get lang() {
+                  return this.language;
+                },
+                // Accessor setter
+                set lang(lang) {
+                  this.language = lang;
+                }
+              }
+  
+              // Display Objects on webpage will output [object Object], except single value object.
+              document.getElementById(&quot;demo-obj&quot;).innerHTML = x + &quot;, &quot; + y + &quot;, &quot; + person;
+              // Display name:value pairs Object's properties
+              document.getElementById(&quot;demo-obj-prop&quot;).innerHTML = &quot;The person's first name is &quot; + 
+                                                                    person.firstName + 
+                                                                    &quot;, the last name is &quot; + 
+                                                                    person.lastName;
+              // Display data from object using a function
+              document.getElementById(&quot;demo-obj-func&quot;).innerHTML= &quot;The person's full name is &quot; + person.fullName();
+              // Set a property using setter
+              person.lang = &quot;English&quot;;
+              // Display data from the object using a getter 
+              document.getElementById(&quot;demo-obj-accessor&quot;).innerHTML = &quot;This person speaks &quot; + person.language;
+            &lt;/script&gt;
+          </code></pre>
+        </div>
+        <h3>Result: </h3>
+        <div class="card-result">
+          <p id="demo-obj"></p>
+          <p id="demo-obj-prop"></p>
+          <p id="demo-obj-func"></p>
+          <p id="demo-obj-accessor"></p>
+        </div>
+        <hr>
+        <p>
+          An <strong>object constructor function</strong> is used to create an "object type" which is a "blueprint" for creating many objects of the same "type". <br>
+          <code>this</code> keyword is used in the constructor function to refer to the object itself. <br>
+        </p>
+        <h3>Code: </h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;p id=&quot;demo-construtor&quot;&gt;&lt;/p&gt;
+            &lt;script&gt;
+              // Construtor function for Student objects
+              function Student(fname, lname, unit) {
+                this.fname = fname;
+                this.lname = lname;
+                this.unit = unit;
+              }
+  
+              // Create two Student objects
+              var stu1 = new Student(&quot;Sam&quot;, &quot;Smith&quot;, &quot;CITS5505&quot;);
+              var stu2 = new Student(&quot;John&quot;, &quot;Doe&quot;, &quot;CITS5505&quot;);
+  
+              // Display Students
+              document.getElementById(&quot;demo-construtor&quot;).innerHTML = &quot;Students are &quot; + stu1.fname + &quot; and &quot; + stu2.fname;
+            &lt;/script&gt;
+          </code></pre>
+        </div>
+        <h3>Result: </h3>
+        <div class="card-result">
+          <p id="demo-construtor"></p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <h2>Functions</h2>
+        <p>
+          A function in JavaScript is a set of statements that performs a task or calculate a value. <br>
+          Functions are defined with the <code>function</code> keyword, can be a declaration or a expression, also a Self-Invokeing Function. <br>
+          JavaScript's deault beahvior - Hoisting also applies to function declarations. It means functions can be called before they are declared. <br>
+          Function expression can be stored in a varibale as an anonymous function and invoked using variable name. <br>
+          Funciton expression can be wrote in a short syntax without keyword <code>function</code> and <code>return</code> and curly brackets as <strong>Arrow Functions</strong> <br>
+          Self-Invoking Function is Expression Function inside parentheses and then followed by () to be executed automatically.
+        </p>
+        <h3>Code: </h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;p id=&quot;demo-func-dec&quot;&gt;&lt;/p&gt;
+            &lt;p id=&quot;demo-func-exp&quot;&gt;&lt;/p&gt;
+            &lt;p id=&quot;demo-func-self&quot;&gt;&lt;/p&gt;
+            &lt;script&gt;
+              // Hoisting, calling function before declaration.
+              var x = myFunction(4, 3);
+              document.getElementById(&quot;demo-func-dec&quot;).innerHTML = &quot;Declaration Function result: &quot; + x;
+              // Function Declarations
+              function myFunction(a, b) {
+                return a * b;
+              }
+              // Function Expression, stored in a variable
+              var y = function (a, b) {return a * b};
+              // Call Expression Function using variable name
+              var z = y(2,3);
+              document.getElementById(&quot;demo-func-exp&quot;).innerHTML = &quot;Expression Function:  &quot;+ y + 
+                                                                    &quot;&lt;br&gt; Expression Function result: &quot; + z;
+              // Self-Invoking function
+              (function () {
+                document.getElementById(&quot;demo-func-self&quot;).innerHTML = &quot;Self-Invoking Function&quot; ;
+              })();
+            &lt;/script&gt;
+          </code></pre>
+        </div>
+        <h3>Result: </h3>
+        <div class="card-result">
+          <p id="demo-func-dec"></p>
+          <p id="demo-func-exp"></p>
+          <p id="demo-func-self"></p>
+        </div>
+        <hr>
+        <p>
+          With <code>call()</code> or <code>apply()</code> function, one object can use a method belonging to another object. <br>
+          The difference between them is <code>call()</code> takes arguements <strong>spearately</strong> and
+          <code>apply()</code> takes arguments as an <strong>array</strong>.
+        </p>
+        <h3>Code: </h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;p id=&quot;demo-func-call&quot;&gt;&lt;/p&gt;
+            &lt;p id=&quot;demo-func-apply&quot;&gt;&lt;/p&gt;
+            &lt;script&gt;
+              var person = {
+                fullName: function(city, country) {
+                  return this.firstName + &quot; &quot; + this.lastName + &quot;, &quot; + city + &quot;, &quot; + country;
+                }
+              }
+              var person1 = {
+                firstName:&quot;John&quot;,
+                lastName: &quot;Doe&quot;
+              }
+              var person2 = {
+                firstName:&quot;Mary&quot;,
+                lastName: &quot;Doe&quot;
+              }
+              // person1 use method from person by using call()
+              var x = person.fullName.call(person1, &quot;Perth&quot;, &quot;Australia&quot;);
+              document.getElementById(&quot;demo-func-call&quot;).innerHTML = x;
+              // person2 use method from person by using apply()
+              var y = person.fullName.apply(person2, [&quot;Melbourne&quot;, &quot;Australia&quot;]);
+              document.getElementById(&quot;demo-func-apply&quot;).innerHTML = y;
+            &lt;/script&gt;
+          </code></pre>
+        </div>
+        <h3>Result: </h3>
+        <div class="card-result">
+          <p id="demo-func-call"></p>
+          <p id="demo-func-apply"></p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <h2>DOM</h2>
+        <p>
+          With the HTML DOM, JavaScript can access and change all the elements of an HTML document. <br>
+          When a web page is loaded, the browser creates a Document Object Model of the page. <br>
+          The document object represents the web page. We can use methods find elements and to add/delete elements or change their properties or styles. <br>
+          <code>getElementsByClassName</code> , <code>getElementsByTagName</code> and <code>querySelectorAll</code> will return a collection(array), 
+          items can be access using index. <br>
+          <code>innerHTML</code> property are used to modify the content of an HTML element. <br>
+
+        </p>
+        <h3>Code: </h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;p id=&quot;dom-get-id&quot;&gt; Paragrah with id&lt;/p&gt;
+            &lt;p class=&quot;dom-get-class&quot;&gt;Paragrah with class&lt;/p&gt;
+            &lt;p class=&quot;dom-get-class&quot;&gt;Paragrah selected by Query Selector&lt;/p&gt;
+            &lt;div id=&quot;demo4tag&quot;&gt;
+              &lt;p&gt;Paragrah selected by tag name&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;br&gt;
+            &lt;p id=&quot;demo-dom-id&quot;&gt;&lt;/p&gt;
+            &lt;p id=&quot;demo-dom-class&quot;&gt;&lt;/p&gt;
+            &lt;p id=&quot;demo-dom-tag&quot;&gt;&lt;/p&gt;
+            &lt;p id=&quot;demo-dom-query&quot;&gt;&lt;/p&gt;
+            &lt;p id=&quot;demo-dom-style&quot;&gt;Style changed by DOM&lt;/p&gt;
+            &lt;script&gt;
+              // Finding HTML Elements by Id
+              var a = document.getElementById(&quot;dom-get-id&quot;);
+              // Using innerHTML to modify content
+              document.getElementById(&quot;demo-dom-id&quot;).innerHTML = &quot;Get element by id: &quot; + a.innerHTML;
+              // Finding HTML Elements by Class, result will be in a array
+              var b = document.getElementsByClassName(&quot;dom-get-class&quot;);
+              // Choose elements in array
+              document.getElementById(&quot;demo-dom-class&quot;).innerHTML = &quot;Get element by class: &quot; + b[0].innerHTML;
+              // Finding HTML Elements by Tag
+              var c = document.getElementById(&quot;demo4tag&quot;);
+              var d = c.getElementsByTagName(&quot;p&quot;);
+              // Choose elements in array
+              document.getElementById(&quot;demo-dom-tag&quot;).innerHTML = &quot;Get element by tag: &quot; + d[0].innerHTML;
+              // Finding HTML Elements by Query Selector
+              var e = document.querySelectorAll(&quot;p.dom-get-class&quot;);
+              document.getElementById(&quot;demo-dom-query&quot;).innerHTML = &quot;Get element by Query Selector: &quot; + e[1].innerHTML;
+  
+              // Changing HTML style
+              document.getElementById(&quot;demo-dom-style&quot;).style.color = &quot;blue&quot;;
+            &lt;/script&gt;
+          </code></pre>
+        </div>
+        <h3>Result: </h3>
+        <div class="card-result">
+          <p id="dom-get-id"> Paragrah with id</p>
+          <p class="dom-get-class">Paragrah with class</p>
+          <p class="dom-get-class">Paragrah selected by Query Selector</p>
+          <div id="demo4tag">
+            <p>Paragrah selected by tag name</p>
+          </div>
+          <br>
+          <p id="demo-dom-id"></p>
+          <p id="demo-dom-class"></p>
+          <p id="demo-dom-tag"></p>
+          <p id="demo-dom-query"></p>
+          <p id="demo-dom-style">Style changed by DOM</p>
+        </div>
+        <hr>
+        <p>
+          <strong>Event</strong> and <strong>Event Listener</strong> allow web page to take some action when some event happens. <br>
+          To assign events to HTML elements you can use event attributes.
+        </p>
+        <h3>Code: </h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;!-- Set event attribute as onclick. When event happen, change text content  --&gt;
+            &lt;p onclick=&quot;this.innerHTML = 'Oh you clicked me!'&quot; style=&quot;background-color: tomato; width: 25%; text-align: center;&quot;&gt;Click Me!&lt;/p&gt;
+            &lt;!-- Set event attribute as onmousedown and onmouseup. When event happen, change text content and background color 
+            using function and pass element itself as parameter  --&gt;
+            &lt;p onmousedown=&quot;mDown(this)&quot; onmouseup=&quot;mUp(this)&quot; style=&quot;background-color: tomato; width: 25%; text-align: center; margin-top: 1em;&quot;&gt;Click and Hold Me!&lt;/p&gt;
+            &lt;!-- Set event attribute as onmouseover and onmouseout. When event happen, change text content and background color 
+            using function and pass element itself as parameter  --&gt;
+            &lt;p onmouseover=&quot;mOver(this)&quot; onmouseout=&quot;mOut(this)&quot;  style=&quot;background-color: tomato; width: 25%; text-align: center; margin-top: 1em;&quot;&gt;Mouse Over Me!&lt;/p&gt;
+            &lt;!-- Not setting event attribute, but add event listener in JavaScript --&gt;
+            &lt;p id=&quot;event-listener&quot; style=&quot;background-color: tomato; width: 25%; text-align: center; margin-top: 1em;&quot;&gt;Try Me!&lt;/p&gt;
+            &lt;script&gt;
+              // Define function to change text content and background color for event
+              function mDown(obj) {
+                obj.style.backgroundColor = &quot;skyblue&quot;;
+                obj.innerHTML = &quot;Release Me&quot;;
+              }
+              
+              function mUp(obj) {
+                obj.style.backgroundColor=&quot;tomato&quot;;
+                obj.innerHTML=&quot;Thank You&quot;;
+              }
+  
+              function mOver(obj) {
+                obj.innerHTML = &quot;Thank You&quot;;
+                obj.style.backgroundColor = &quot;skyblue&quot;;
+              }
+  
+              function mOut(obj) {
+                obj.innerHTML = &quot;Mouse Over Me&quot;;
+                obj.style.backgroundColor=&quot;tomato&quot;;
+              }
+  
+              // Using addEventListener() to attach event handler to the specified element
+              // Use click instead of on click on addEventListener
+              // Event handler can be a function or a function expression
+              document.getElementById(&quot;event-listener&quot;).addEventListener(&quot;click&quot;, showTxt);
+              function showTxt() {
+                document.getElementById(&quot;event-listener&quot;).innerHTML = &quot;Event Listener Worked!&quot;;
+                document.getElementById(&quot;event-listener&quot;).style.backgroundColor = &quot;skyblue&quot;;
+              }
+            &lt;/script&gt;
+          </code></pre>
+        </div>
+        <h3>Result: </h3>
+        <div class="card-result">
+          <!-- Set event attribute as onclick. When event happen, change text content  -->
+          <p onclick="this.innerHTML = 'Oh you clicked me!'" style="background-color: tomato; width: 25%; text-align: center;">Click Me!</p>
+          <!-- Set event attribute as onmousedown and onmouseup. When event happen, change text content and background color 
+          using function and pass element itself as parameter  -->
+          <p onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color: tomato; width: 25%; text-align: center; margin-top: 1em;">Click and Hold Me!</p>
+          <!-- Set event attribute as onmouseover and onmouseout. When event happen, change text content and background color 
+          using function and pass element itself as parameter  -->
+          <p onmouseover="mOver(this)" onmouseout="mOut(this)"  style="background-color: tomato; width: 25%; text-align: center; margin-top: 1em;">Mouse Over Me!</p>
+          <!-- Not setting event attribute, but add event listener in JavaScript -->
+          <p id="event-listener" style="background-color: tomato; width: 25%; text-align: center; margin-top: 1em;">Try Me!</p>
+        </div>
+        <hr>
+        <p>
+          Everything in an HTML documnet is a node, they have a hierarchical relationship to each other. With JavaScript, we can add, remove or replace the nodes. <br>
+          Elements can have text node, the value of the text node can be accessed node's <code>innerHTML</code> property. <br>
+          To add a node(element), we need to create it first and then append it to the existing element.
+        </p>
+        <h3>Code: </h3>
+        <div class="card-code">
+          <pre><code>
+            &lt;div id=&quot;demo-node-div&quot;&gt;
+              &lt;ul id=&quot;demo-node&quot;&gt;
+                &lt;!-- A list item to be removed with remove() funciton --&gt;
+                &lt;li id=&quot;node2remove&quot; onclick=&quot;this.remove()&quot; 
+                style=&quot;background-color: tomato; width: 50%;&quot;&gt;Click Me to Remove Me by remove()&lt;/li&gt;
+                &lt;!-- A list item to be removed with removeChild() function --&gt;
+                &lt;li id=&quot;child2remove&quot; onclick=&quot;this.parentNode.removeChild(this)&quot;
+                style=&quot;background-color: tomato; width: 50%; margin-top: 0.3em;&quot; &gt;Click Me to Remove Me by removeChild()&lt;/li&gt;
+                &lt;li id=&quot;child2replace&quot; onclick=&quot;this.parentNode.replaceChild(nli,this)&quot;
+                style=&quot;background-color: tomato; width: 50%; margin-top: 0.3em;&quot; &gt;Click Me to Replace Me&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;script&gt;
+              // Create a new list item
+              var newLi = document.createElement(&quot;li&quot;);
+              // Create the list item's textnode and its text value
+              var txt = document.createTextNode(&quot;This is a list item added by adding node&quot;);
+              // Append the textnode to the list item
+              newLi.appendChild(txt);
+              //Get the parent element we want to insert the new list item into
+              var ul = document.getElementById(&quot;demo-node&quot;);
+              ul.appendChild(newLi);
+    
+              // Create a new paragraph
+              var newPara = document.createElement(&quot;p&quot;);
+              var pTxt = document.createTextNode(&quot;This is a paragraph created by insertBefore&quot;);
+              // Append the textnode to the paragraph
+              newPara.appendChild(pTxt);
+              //Get the parent element we want to insert the new list item into
+              var div = document.getElementById(&quot;demo-node-div&quot;);
+              div.insertBefore(newPara, ul);
+    
+              var nli = document.createElement(&quot;li&quot;);
+              var nTxt = document.createTextNode(&quot;I've been replaced&quot;)
+              nli.appendChild(nTxt);
+            &lt;/script&gt;
+          </code></pre>
+        </div>
+        <h3>Result: </h3>
+        <div class="card-result">
+          <div id="demo-node-div">
+            <ul id="demo-node">
+              <!-- A list item to be removed with remove() funciton -->
+              <li id="node2remove" onclick="this.remove()" 
+              style="background-color: tomato; width: 50%;">Click Me to Remove Me by remove()</li>
+              <!-- A list item to be removed with removeChild() function -->
+              <li id="child2remove" onclick="this.parentNode.removeChild(this)"
+              style="background-color: tomato; width: 50%; margin-top: 0.3em;" >Click Me to Remove Me by removeChild()</li>
+              <li id="child2replace" onclick="this.parentNode.replaceChild(nli,this)"
+              style="background-color: tomato; width: 50%; margin-top: 0.3em;" >Click Me to Replace Me</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="secAJAX">
+      <h1>AJAX</h1>
+      AJAX stands for Asynchronous JavaScript And XML. It is not a programming language. <br>
+      With AJAX, we can read data from a web server after the page has loaded, update a web page without reloading the page and 
+      send data to a web server in the background
+      <div class="card">
+        <p>
+          For AJAX request, <strong>XMLHttpRequest</strong> is the fundamental object of AJAX, all modern browsers support the <code>XMLHttpRequest</code> object. <br>
+          <code>open()</code> and <code>send()</code> methods of the <code>XMLHttpRequest</code> object are used to send a request to a server. <br>
+          For AJAX response, <code>onreadystatechange</code> property defines a function to be executed when the readyState changes. <br>
+          The <code>readyState</code> property holds the status of the XMLHttpRequest. 
+          The <code>status</code> property and the <code>statusText</code> property holds the status of the XMLHttpRequest object. <br>
+          JSON, stands for avaScript Object Notation, it is a lightweight data-interchange format. We use it for storing and exchanging data.
+        </p>
+        <h3>Code: </h3>
+        <div class="card-code">
+          <pre><code>
+            var f1 = document.getElementById('f1');
+            // A callback function is a function passed as a parameter to another function
+            const getData = (callback) =&gt; {
+              // Create an XMLHttpRequest object
+              var request = new XMLHttpRequest();
+
+              // Add event listener to check if request success
+              request.addEventListener('readystatechange', () =&gt; {
+                // console.log(request, request.readyState);
+                // If the 4: request finished and response ready &amp;&amp; 200:the request status is OK, 
+                // parse the response text as json and access the data we want
+                // then, use the data to construct html element to build a table of the data
+                // Else, return error message.
+                if(request.readyState === 4 &amp;&amp; request.status === 200) {
+                  // access the data we want
+                  var data = JSON.parse(request.responseText);
+                  var objData = data.MRData.RaceTable.Races[0];
+                  // construct html table statement
+                  var txt = &quot;&lt;table border='1' width=100%&gt;&lt;caption&gt;&lt;/caption&gt;2008 F1 Round 5 Results&lt;tr&gt;&lt;th&gt;Position&lt;/th&gt;&lt;th&gt;Driver&lt;/th&gt;&quot;;
+                  for (x in objData.Results) {
+                    txt += &quot;&lt;tr&gt;&lt;td&gt;&quot; + objData.Results[x].position + &quot;&lt;/td&gt;&lt;td&gt;&quot; +
+                          objData.Results[x].Driver.givenName + &quot; &quot; + objData.Results[x].Driver.familyName + &quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
+                  }
+                  txt += &quot;&lt;/table&gt;&quot;;
+                  // Set html element's text with the statement constructed above.
+                  f1.innerHTML = txt;
+                  callback(undefined, data);
+                } else if(request.readyState ===4) {
+                  console.log('could not fetch the data', undefined)
+                }
+              })
+
+              // Use cors-aynwhere proxy server adds CORS headers to a request
+              // To send a request to the server, use the open() and send() methods of the XMLHttpRequest object
+              request.open('GET', 'http://ergast.com/api/f1/2008/5/results.json');
+              request.send(); 
+            };
+
+            // Call the function
+            getData((err, data) =&gt; {
+              console.log('callback fired');
+              if(err) {
+                console.log(err);
+              } else {
+                console.log(data);
+
+              }
+            })
+          </code></pre>
+        </div>
+        <h3>Result: </h3>
+        <div class="card-result">
+          <div id="f1"></div>
+          <!-- Excute script.js to get and format AJAX data into html page -->
+          <script src="script.js"></script>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
